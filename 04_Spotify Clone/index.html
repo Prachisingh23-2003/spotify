@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/style.css" class="css" />
+    <link rel="stylesheet" href="css/Utility.css" />
+    <title>Spotify</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="cursor"></div>
+
+      <div class="left">
+        <div class="homebox bg-color">
+          <div class="close-button">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <img src="svg/logo.svg" class="invert" />
+          <ul>
+            <li>
+              <img src="svg/home.svg" alt="Home" class="invert" />
+              Home
+            </li>
+            <li>
+              <img src="svg/seach.svg" alt="Search" class="invert" />
+              Search
+            </li>
+          </ul>
+        </div>
+
+        <div class="library bg-color">
+          <div class="lib">
+            <img src="svg/library.svg" alt="" class="invert" />
+             <p>Your Library</p>
+            <img id="plus" src="svg/plus.svg" alt="" class="invert" />
+          </div>
+          <div class="songs">Songs</div>
+
+          <div class="inside">
+            <!-- <ul>
+              <li class="songlist">
+                <div class="inside-first">
+                  <i class="fa-solid fa-music"></i>
+                  <div class="songInfo">
+                    <h3>${song}</h3>
+                    <h5>Argit Singh</h5>
+                  </div>
+                </div>
+                <div class="playnow">
+                  <h4>Play Now</h4>
+                  <i class="fa-solid fa-circle-play"></i>
+                </div>
+              </li>
+            </ul> -->
+            <!-- <div class="inside-two">
+              <h4>Let's find some podcasts to follow</h4>
+              <h5>We'll keep you updated on new episodes</h5>
+              <button>Browse podcast</button>
+            </div> -->
+          </div>
+
+          <div class="list">
+            <ul>
+              <li>Legal</li>
+              <li>Privacy Center</li>
+              <li>Privacy Policy</li>
+              <li>Cookies</li>
+            </ul>
+          </div>
+          <div class="lanbutton">
+            <button><img src="svg/lang.svg" alt="" /> English</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="right bg-color">
+        <div class="header">
+          <div class="arrows">
+            <div class="hamburger">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+            <button class="first-arrow">
+              <i class="fa-solid fa-chevron-left"></i>
+            </button>
+            <button class="second-arrow">
+              <i class="fa-solid fa-chevron-right"></i>
+            </button>
+          </div>
+          <div class="logins">
+            <div class="sign-up">
+              <a href="#">Sign up</a>
+            </div>
+            <div class="login">
+              <a href="#">Log in</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="playLists">
+          <h1>Spotify Playlists</h1>
+          <div class="cards">
+            <div class="card-one">
+              <div class="card-img">
+                <img src="img/heart.png" alt="" />
+                <div class="play">
+                  <i class="fa-solid fa-play"></i>
+                </div>
+              </div>
+              <div class="content">
+                <h4>Liked Songs</h4>
+                <p>The perfect</p>
+                <p>soundtrack to those...</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="firstlist">
+              <ul>
+                <h4>Compny</h4>
+                <li>About</li>
+                <li>Jobs</li>
+                <li>For the Record</li>
+              </ul>
+              <ul>
+                <h4>Communities</h4>
+                <li>For Artist</li>
+                <li>Developers</li>
+                <li>Advertising</li>
+                <li>Investers</li>
+                <li>Vendors</li>
+              </ul>
+              <ul>
+                <h4>Usefull links</h4>
+                <li>Support</li>
+                <li>Free Mobile App</li>
+              </ul>
+            </div>
+            <div class="links">
+              <i
+                style="color: rgb(23, 109, 137); font-size: 30px"
+                class="fa-brands fa-linkedin"
+              ></i>
+              <i
+                style="color: rgb(197, 148, 64); font-size: 30px"
+                class="fa-brands fa-instagram"
+              ></i>
+              <i
+                style="color: rgb(23, 122, 183); font-size: 30px"
+                class="fa-brands fa-twitter"
+              ></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="playbar">
+          <div class="abovePlayBar">
+            <div class="songsinfo">PAISA_.mp3</div>
+
+            <div class="playbuttons">
+              <div id="previous">
+                <i class="fa-solid fa-backward-step"></i>
+              </div>
+              <div id="play">
+                <i class="fa-regular fa-circle-play"></i>
+              </div>
+              <div id="next">
+                <i class="fa-solid fa-forward-step"></i>
+              </div>
+            </div>
+
+            <div class="timer">00:00/00:00</div>
+            <div class="volume">
+              <div class="sound">
+                <i class="fa-solid fa-volume-high"></i>
+              </div>
+              <input type="range" id="range" />
+            </div>
+          </div>
+
+          <div class="seekbar">
+            <div class="circal"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
